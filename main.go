@@ -2,9 +2,15 @@
 
 package main
 
-import "os"
+import (
+	"os"
+
+	"github.com/honnuanand/GoMuxPostgres/pkg/hello"
+)
 
 func main() {
+	println(hello.Hello("HelloWorld"))
+
 	a := App{}
 	a.Initialize(
 		GetEnv("postgres", "APP_DB_USERNAME"),
