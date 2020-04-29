@@ -7,6 +7,7 @@ services:
       - "5432:5432"
     volumes:
       - my_dbdata:/var/lib/postgresql/data
+      # %%%%%%% Change the password  before using it %%%%%% 
     environment:
       POSTGRES_DB: "postgres"
       POSTGRES_USER: "postgres"

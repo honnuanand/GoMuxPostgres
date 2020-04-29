@@ -1,4 +1,4 @@
-module github.com/honnuanand/GoMuxPostgress
+module github.com/honnuanand/GoMuxPostgres
 
 go 1.14
 
