@@ -4,12 +4,11 @@ package main
 
 import (
 	"os"
-
-	"github.com/honnuanand/GoMuxPostgres/pkg/hello"
+	// "github.com/honnuanand/GoMuxPostgres/pkg/hello"
 )
 
 func main() {
-	println(hello.Hello("HelloWorld"))
+	// println(hello.Hello("HelloWorld"))
 
 	a := App{}
 	a.Initialize(
