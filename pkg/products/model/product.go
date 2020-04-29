@@ -1,6 +1,6 @@
 // model.go
 
-package products/model
+package model
 
 import (
 	"database/sql"

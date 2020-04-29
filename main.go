@@ -4,13 +4,14 @@ package main
 
 import (
 	"os"
-	// "github.com/honnuanand/GoMuxPostgres/pkg/hello"
+
+	productsApp "github.com/honnuanand/GoMuxPostgres/pkg/products/handlers"
 )
 
 func main() {
 	// println(hello.Hello("HelloWorld"))
 
-	a := App{}
+	a := productsApp.App{}
 	a.Initialize(
 		GetEnv("postgres", "APP_DB_USERNAME"),
 		GetEnv("pgpass", "APP_DB_PASSWORD"),
