@@ -1,2 +1,2 @@
-This is a Project to focus my learning path on go-lang for the web. 
+This is a Project to focus my learning path on ***go-lang for the web***. 
 Some of the initial Ideas are from This [tutorial/blog](https://semaphoreci.com/community/tutorials/building-and-testing-a-rest-api-in-go-with-gorilla-mux-and-postgresql) which was very clear to get started.
