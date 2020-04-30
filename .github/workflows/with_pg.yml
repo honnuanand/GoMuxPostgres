@@ -20,6 +20,7 @@ jobs:
           POSTGRES_PASSWORD: pgpass
           POSTGRES_DB: "postgres"
           POSTGRES_USER: "postgres"
+          POSTGRES_HOST: "localhost"
           POSTGRES_HOST_AUTH_METHOD: "trust" 
         # Set health checks to wait until postgres has started
         options: >-
