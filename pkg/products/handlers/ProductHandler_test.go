@@ -21,7 +21,8 @@ func TestMain(m *testing.M) {
 	a.Initialize(
 		utils.GetEnv("postgres", "APP_DB_USERNAME"),
 		utils.GetEnv("pgpass", "APP_DB_PASSWORD"),
-		utils.GetEnv("postgres", "APP_DB_NAME"))
+		utils.GetEnv("postgres", "APP_DB_NAME"),
+		utils.GetEnv("localhost", "APP_DB_HOST"))
 
 	ensureTableExists()
 	code := m.Run()

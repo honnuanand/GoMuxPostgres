@@ -18,11 +18,11 @@ type App struct {
 	DB     *sql.DB
 }
 
-func (a *App) Initialize(user, password, dbname string) {
+func (a *App) Initialize(user, password, dbname, dbhost string) {
 
 	connectionString :=
-		fmt.Sprintf("user=%s password=%s dbname=%s sslmode=disable", user, password, dbname)
-	fmt.Printf("user=%s password=%s dbname=%s sslmode=disable", user, password, dbname)
+		fmt.Sprintf("user=%s password=%s dbname=%s host=%s sslmode=disable", user, password, dbname, dbhost)
+	fmt.Printf("user=%s password=%s dbname=%s host=%s sslmode=disable", user, password, dbname, dbhost)
 
 	var err error
 	a.DB, err = sql.Open("postgres", connectionString)

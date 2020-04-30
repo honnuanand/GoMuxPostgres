@@ -14,7 +14,8 @@ func main() {
 	a.Initialize(
 		utils.GetEnv("postgres", "APP_DB_USERNAME"),
 		utils.GetEnv("pgpass", "APP_DB_PASSWORD"),
-		utils.GetEnv("postgres", "APP_DB_NAME"))
+		utils.GetEnv("postgres", "APP_DB_NAME"),
+		utils.GetEnv("localhost", "APP_DB_HOST"))
 
 	a.Run(":8010")
 }
