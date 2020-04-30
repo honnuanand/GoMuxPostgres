@@ -5,7 +5,14 @@ Build Steps:
 1. Check out the Code from the repository
 1. 
     ```
-    $ cd GoMuxPostgres
+    cd docker
+    sh start-postgres-on-docker.sh
+    ```
+    This should start a postgres instance on Docker
+1. run the exports in the ```docker/dbparams_env.sh```    
+1. 
+    ```
+    $ cd ..
     ```
 1. 
     ```
@@ -16,5 +23,5 @@ Build Steps:
     $ bin/go-mux-api 
     user=postgres password=pgpass dbname=postgres sslmode=disable
     ```
-1. Open a Browser and hit all the end points as per the routes created
+1. Open a Browser and hit all the end points as per the routes created in the ```pkg/handlers/productHandlers.go```
 
