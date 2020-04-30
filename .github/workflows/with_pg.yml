@@ -1,4 +1,4 @@
-name: PostgreSQL service example
+name: DB-Connected-Tests
 on: push
 
 jobs:
