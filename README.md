@@ -1,6 +1,5 @@
 ![Go](https://github.com/honnuanand/GoMuxPostgres/workflows/Go/badge.svg)
-![DB-Connected-Test](https://github.com/honnuanand/GoMuxPostgres/workflows/PostgreSQL%20service%20example/badge.svg)
-
+![DB-Connected-Tests](https://github.com/honnuanand/GoMuxPostgres/workflows/DB-Connected-Tests/badge.svg)
 
 This is a Project to focus my learning path on ***go-lang for the web***. 
 Some of the initial Ideas are from This [tutorial/blog](https://semaphoreci.com/community/tutorials/building-and-testing-a-rest-api-in-go-with-gorilla-mux-and-postgresql) which was very clear to get started.
