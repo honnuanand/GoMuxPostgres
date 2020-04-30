@@ -1,6 +1,6 @@
 // main_test.go
 
-package main
+package handlers
 
 import (
 	"bytes"
@@ -11,28 +11,22 @@ import (
 	"os"
 	"strconv"
 	"testing"
+
+	utils "github.com/honnuanand/GoMuxPostgres/pkg/utils"
 )
 
 var a App
 
 func TestMain(m *testing.M) {
 	a.Initialize(
-		GetEnv("postgres", "APP_DB_USERNAME"),
-		GetEnv("pgpass", "APP_DB_PASSWORD"),
-		GetEnv("postgres", "APP_DB_NAME"))
+		utils.GetEnv("postgres", "APP_DB_USERNAME"),
+		utils.GetEnv("pgpass", "APP_DB_PASSWORD"),
+		utils.GetEnv("postgres", "APP_DB_NAME"))
 
 	ensureTableExists()
 	code := m.Run()
 	clearTable()
 	os.Exit(code)
-}
-
-//TODO : move ths to the GOStrings Module
-func GetEnv(defaultString string, envName string) string {
-	if value := os.Getenv(envName); value != "" {
-		return value
-	}
-	return defaultString
 }
 
 func ensureTableExists() {
