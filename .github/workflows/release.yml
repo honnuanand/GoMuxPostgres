@@ -51,6 +51,6 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: ./tmp/terraform-provider-k14sx-binaries.tgz
-        asset_name: terraform-provider-k14sx-binaries.tgz
+        asset_path: ./tmp/GoMuxPostgres-binaries.tgz
+        asset_name: GoMuxPostgres-binaries.tgz
         asset_content_type: application/gzip
