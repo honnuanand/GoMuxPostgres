@@ -1,4 +1,5 @@
 ![Go](https://github.com/honnuanand/GoMuxPostgres/workflows/Go/badge.svg)
+![DB-Connected-Test](https://github.com/honnuanand/GoMuxPostgres/workflows/PostgreSQL%20service%20example/badge.svg)
 
 
 This is a Project to focus my learning path on ***go-lang for the web***. 
